@@ -1,0 +1,14 @@
+:root {
+    /* COLORS */
+    --bg-color: #202020;
+    --txt-color: white;
+
+    /* FONTS */
+    --sans-font: "Calibri", Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--txt-color);
+    font-family: var(--sans-font);
+}
