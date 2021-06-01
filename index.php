@@ -14,14 +14,9 @@ include_once "api/core/db.php"; // Include the DB config file.
 </head>
 <body>
 
-<p>Testing for great justice.</p>
-
-<?php
-    echo "Document root: " . $_SERVER['DOCUMENT_ROOT'];
-    // Test run of the DB connection.
-    $results = DB::run("SELECT * FROM trouble_tickets")->fetchAll();
-    print_r($results);
-?>
+<div class="col padded">
+    <h3>#netboss</h3>
+</div>
 
 </body>
 </html>
