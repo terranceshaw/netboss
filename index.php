@@ -8,16 +8,11 @@
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <title>#NETBOSS</title>
+    <title>#netboss</title>
 </head>
 <body>
 
-<%
-    ' Dimension variables
-    dim adoCon, rsGuestbook, strSQL
-    set adoCon = Server.CreateObject("ADODB.Connection")
-    adoCon.Open "Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\inetpub\wwwroot\nemesys_db.accdb"
-%>
+<p>Testing for great justice.</p>
 
 </body>
 </html>
