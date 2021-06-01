@@ -1,4 +1,6 @@
-<!DOCTYPE html>
+<?php
+include_once "api/core/db.php"; // Include the DB config file.
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -13,6 +15,13 @@
 <body>
 
 <p>Testing for great justice.</p>
+
+<?php
+    echo "Document root: " . $_SERVER['DOCUMENT_ROOT'];
+    // Test run of the DB connection.
+    $results = DB::run("SELECT * FROM trouble_tickets")->fetchAll();
+    print_r($results);
+?>
 
 </body>
 </html>
