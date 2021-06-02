@@ -1,9 +1,10 @@
 <?php
 // Source: https://phpdelusions.net/pdo/pdo_wrapper
+// Database class to do the heavy lifting of all those sweet, sweet datas.
+// Blatant rip from the source URL
 require_once "db-config.php";
 
-class DB
-{
+class DB {
     protected static $instance = null;
 
     protected function __construct() {}

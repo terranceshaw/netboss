@@ -1,5 +1,5 @@
 <?php
-include_once "api/core/db.php"; // Include the DB config file.
+include_once "api/core/db.php"; // Include the DB class.
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,9 +14,13 @@ include_once "api/core/db.php"; // Include the DB config file.
 </head>
 <body>
 
-<div class="col padded">
-    <h3>#netboss</h3>
-</div>
+<?php include "includes/navigation.php" ?>
+
+<?php include isset($_GET['page']) ? "pages/" . $_GET['page'] . ".php" : "pages/home.php"; ?>
+
+<footer>
+    #netboss <?php echo date('Y') ?>
+</footer>
 
 </body>
 </html>
