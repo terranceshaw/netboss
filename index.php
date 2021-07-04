@@ -1,5 +1,6 @@
 <?php
-include_once "api/core/db.php"; // Include the DB class.
+// include_once "api/core/db.php"; // Include the DB class.
+include_once "api/objects/user.php";
 ?><!DOCTYPE html>
 <html lang="en">
 <head>

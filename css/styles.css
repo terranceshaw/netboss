@@ -93,6 +93,10 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 20px;
 }
 
+.page-title {
+    font-size: 1.5rem;
+}
+
 a {
     text-decoration: none;
     color: var(--accent-color);
@@ -185,6 +189,20 @@ footer {
 .nav-item > .nav-bar {
     display: none;
 }
+
+.link-flavor {
+	background: #202020;
+	font-size: .8rem;
+	padding: 2px 6px;
+	border-radius: 2px;
+	opacity: .5;
+    margin-left: auto;
+}
+
+	.nav-link:hover > .link-flavor {
+		opacity: 1;
+	}
+
 /* FORM STYLING */
 
 label{
@@ -285,6 +303,10 @@ input[type=reset] {
     }
 
     /* CONTENT STYLING */
+
+    .small-form {
+        max-width: 300px;
+    }
 
     #content-wrapper {
         width: 700px;

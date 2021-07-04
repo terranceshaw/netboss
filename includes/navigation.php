@@ -35,7 +35,7 @@
 			</li>
 			<li class="nav-item"><a href="https://web.cvn77.navy.mil:8081/combat-systems/SitePages/Home.aspx" class="nav-link">Combat Systems <span class="chevron">&#8250;</span></a>
 				<ul class="nav-bar sub-menu">
-					<li class="nav-item" id="cso-hidey-hole"><a href="https://web.cvn77.navy.mil:8081/combat-systems/SitePages/CS0.aspx" class="nav-link">CS0 <span class="link-flavor">CSD Administration</span></a><img src="./img/cvn77cso.jpg" id="lil-cso" title="CDR Billy Young. Killin' it as CSO since 1775."></a></li>
+					<li class="nav-item" id="cso-hidey-hole"><a href="https://web.cvn77.navy.mil:8081/combat-systems/SitePages/CS0.aspx" class="nav-link">CS0 <span class="link-flavor">CSD Administration</span></a></li>
 					<li class="nav-item"><a href="https://web.cvn77.navy.mil:8081/combat-systems/SitePages/CS1.aspx" class="nav-link">CS1 <span class="link-flavor">Main Communications</span></a></li>
 					<li class="nav-item"><a href="https://web.cvn77.navy.mil:8081/combat-systems/SitePages/CS2.aspx" class="nav-link">CS2 <span class="link-flavor">Information Assurance</span></a></li>
 					<li class="nav-item"><a href="https://web.cvn77.navy.mil:8081/combat-systems/SitePages/CS31.aspx" class="nav-link">CS31 <span class="link-flavor">Automated Data Processing</span></a></li>
@@ -196,5 +196,5 @@
             <li class="nav-item"><a href="#" class="nav-link">Contact the Webmaster</a></li>
         </ul>
     </li>
-    <li class="nav-item"><a href="#" class="nav-link" title="Log In"><i class="fas fa-user-circle"></i> Login</a></li>
+	<li class="nav-item"><a href="#" class="nav-link">Admin</a></li>
 </ul>
