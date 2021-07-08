@@ -15,5 +15,11 @@ include_once "api/core/secure-site.php";    // Used to create/validate users as 
 </head>
 <body>
 
+<?php
+    include_once "inc/navigation.php";  // Navigation bar... for navigating things.
+
+    include_once isset($_GET['page']) ? "pages/" . $_GET['page'] . ".php" : "pages/home.php";
+?>
+
 </body>
 </html>
