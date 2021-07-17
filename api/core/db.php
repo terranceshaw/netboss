@@ -1,10 +1,8 @@
 <?php
-// Source: https://phpdelusions.net/pdo/pdo_wrapper
-// Database class to do the heavy lifting of all those sweet, sweet datas.
-// Blatant rip from the source URL
-require_once "db-config.php";
+include_once "db_config.php";
 
-class DB {
+class DB
+{
     protected static $instance = null;
 
     protected function __construct() {}
@@ -17,8 +15,7 @@ class DB {
                 PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
                 PDO::ATTR_EMULATE_PREPARES   => FALSE,
             );
-            $dsn = 'odbc:Driver={SQL Server};Server='.DB_HOST.';Database='.DB_NAME.';';
-            self::$instance = new PDO($dsn, DB_USER, DB_PASS, $opt);
+            self::$instance = new PDO("odbc:Driver={SQL Server};server=" . DB_HOST . ";database=" . DB_NAME, DB_USER, DB_PASS, $opt);
         }
         return self::$instance;
     }
@@ -34,6 +31,14 @@ class DB {
         $stmt = self::instance()->prepare($sql);
         $stmt->execute($args);
         return $stmt;
+    }
+
+    public static function connectionStatus() {
+        if (self::$instance) {
+            echo "Connection established.";
+        } else {
+            echo "Error connecting to the database.";
+        }
     }
 }
 
